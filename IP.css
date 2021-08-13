@@ -1,0 +1,494 @@
+/* Universal*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*.....................................................................*/
+/* Selection tag when you select something */
+::selection {
+  background-color: #09ff00;
+}
+/*.....................................................................*/
+/* body */
+body {
+  background: #7c83fd;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: 17px;
+  font-family: "Source Code Pro", monospace;
+}
+/*.......................................................................*/
+/* Button */
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 88%;
+  left: 40%;
+  background-color: black;
+  color: white;
+  transition: all 3s linear;
+}
+#Show:hover {
+  animation: flash 0.5s ease-in;
+  transition: all 0.3s linear;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*.......................................................................*/
+
+/* Txt */
+#text {
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+}
+/*.......................................................................*/
+
+/* Start of data section */
+#map {
+  background-color: red;
+  width: 180px;
+  position: absolute;
+  left: 35%;
+}
+/* IP */
+#IP {
+  text-align: start;
+  padding: 10px 30px;
+  position: absolute;
+  top: 21%;
+}
+/* Locaion */
+#location {
+  text-align: start;
+  padding: 10px 30px;
+  position: absolute;
+  top: 30%;
+}
+/* Latitude */
+#latitude {
+  text-align: start;
+  padding: 10px 30px;
+  position: absolute;
+  top: 39%;
+}
+/* Longitude */
+#longitude {
+  text-align: start;
+  padding: 10px 30px;
+  position: absolute;
+  top: 48%;
+}
+/* Timezone */
+#timezone {
+  text-align: start;
+  padding: 10px 30px;
+  position: absolute;
+  top: 58%;
+}
+/* Postal */
+#postal {
+  text-align: start;
+  padding: 10px 30px;
+  position: absolute;
+  top: 68%;
+}
+/* Org */
+#org {
+  text-align: start;
+  padding: 83px 30px;
+  position: absolute;
+  top: 64%;
+}
+/* Population */
+#population {
+  text-align: start;
+  padding: 0px 27px;
+  position: absolute;
+  top: 112px;
+  left: 59%;
+}
+/* Capital */
+#capital {
+  text-align: end;
+  padding: 10px 30px;
+  position: absolute;
+  top: 156px;
+  left: 59%;
+}
+/* Code */
+#code {
+  text-align: end;
+  padding: 10px 30px;
+  position: absolute;
+  top: 209px;
+  left: 59%;
+}
+/* Calling Code */
+#calling-code {
+  text-align: end;
+  padding: 10px 30px;
+  position: absolute;
+  top: 264px;
+  left: 59%;
+}
+/* Area */
+#area {
+  text-align: end;
+  padding: 10px 30px;
+  position: absolute;
+  top: 317px;
+  left: 59%;
+}
+/* Currency */
+#currency {
+  text-align: end;
+  padding: 10px 30px;
+  position: absolute;
+  top: 371px;
+  left: 59%;
+}
+/* Continent */
+#continent {
+  text-align: end;
+  padding: 10px 30px;
+  position: absolute;
+  top: 425px;
+  left: 59%;
+}
+/* imp note */
+#note {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  padding: 10px 1px;
+}
+/* End of data section */
+
+/*.......................................................................*/
+
+/* Start of Preloader section */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  animation: rotate 5s infinite;
+  top: 48%;
+  display: none;
+}
+.ball {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.upper {
+  left: 0;
+  top: -22px;
+  background: #2da2ff;
+  animation: upper 1s linear infinite;
+}
+@keyframes upper {
+  50% {
+    top: 22px;
+  }
+  100% {
+    top: 22px;
+  }
+}
+.right {
+  right: -22px;
+  top: 0;
+  background: #ff337a;
+  animation: right 1s linear infinite;
+}
+@keyframes right {
+  50% {
+    right: 22px;
+  }
+  100% {
+    right: 22px;
+  }
+}
+.lower {
+  bottom: -22px;
+  left: 0;
+  background: #ffff00;
+  animation: lower 1s linear infinite;
+}
+@keyframes lower {
+  50% {
+    bottom: 22px;
+  }
+  100% {
+    bottom: 22px;
+  }
+}
+.left {
+  left: -22px;
+  top: 0;
+  background: #00ff00;
+  animation: left 1s linear infinite;
+}
+@keyframes left {
+  50% {
+    left: 22px;
+  }
+  100% {
+    left: 22px;
+  }
+}
+/* End of preloader section */
+
+/*.......................................................................*/
+
+/* Media query-1 start  */
+@media screen and (max-width: 1212px) {
+  * {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+  #population {
+    left: 47%;
+  }
+  #capital {
+    left: 47%;
+  }
+  #code {
+    left: 47%;
+  }
+  #calling-code {
+    left: 47%;
+  }
+  #area {
+    left: 47%;
+  }
+  #currency {
+    left: 47%;
+  }
+  #continent {
+    left: 47%;
+  }
+}
+/* Media query-1 end */
+/*.......................................................................*/
+/* Media query-2 start */
+@media screen and (max-width: 1105px) {
+  * {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  body {
+    overflow: scroll;
+  }
+  #population {
+    left: 0%;
+    top: 89%;
+  }
+  #capital {
+    left: 0%;
+    top: 96%;
+  }
+  #code {
+    left: 0%;
+    top: 105%;
+  }
+  #calling-code {
+    left: 0%;
+    top: 114%;
+  }
+  #area {
+    left: 0%;
+    top: 123%;
+  }
+  #currency {
+    left: 0%;
+    top: 132%;
+  }
+  #continent {
+    left: 0%;
+    top: 141%;
+  }
+
+  button {
+    top: 14%;
+    left: 38%;
+  }
+  #note {
+    display: none;
+  }
+}
+/* Media query-2 end */
+/*.......................................................................*/
+/* Media query-3 start */
+@media screen and (max-width: 592px) {
+  body {
+    font-size: 18px;
+    text-align: center;
+  }
+  button {
+    top: 16%;
+    left: 75px;
+  }
+  #IP {
+    text-align: start;
+    padding: 10px 30px;
+    position: absolute;
+    top: 24%;
+  }
+  #location {
+    padding: 10px 30px;
+    position: absolute;
+    top: 33%;
+  }
+
+  #latitude {
+    padding: 10px 30px;
+    position: absolute;
+    top: 47%;
+  }
+  #longitude {
+    padding: 10px 30px;
+    position: absolute;
+    top: 56%;
+  }
+  #timezone {
+    padding: 10px 30px;
+    position: absolute;
+    top: 75%;
+    left: -4px;
+  }
+  #postal {
+    padding: 10px 30px;
+    position: absolute;
+    top: 84%;
+    left: -2px;
+  }
+  #org {
+    padding: 0px 30px;
+    position: absolute;
+    top: 95%;
+    left: -3px;
+  }
+  #population {
+    padding: 0px 27px;
+    position: absolute;
+
+    top: 108%;
+  }
+  #capital {
+    padding: 10px 30px;
+    position: absolute;
+    top: 126%;
+    left: 7%;
+    margin: -31px;
+  }
+  #code {
+    padding: 10px 30px;
+    position: absolute;
+    top: 132%;
+  }
+  #calling-code {
+    padding: 10px 30px;
+    position: absolute;
+    top: 141%;
+  }
+  #area {
+    padding: 10px 30px;
+    position: absolute;
+    top: 150%;
+  }
+  #currency {
+    padding: 10px 30px;
+    position: absolute;
+    position: absolute;
+    top: 162%;
+    left: 6%;
+    margin: -22px;
+  }
+  #continent {
+    padding: 10px 30px;
+    position: absolute;
+    top: 167%;
+  }
+}
+/* Media query-3 end */
+/*.......................................................................*/
+/* Media query-4 start */
+@media screen and (max-width: 360px) {
+  #continent {
+    padding: 10px 30px;
+    position: absolute;
+    top: 177%;
+  }
+
+  #currency {
+    text-align: end;
+    padding: 10px -5px;
+    position: absolute;
+    top: 174%;
+    margin: -40px;
+    font-size: 25px;
+  }
+
+  #capital {
+    padding: 8px 18px;
+    position: absolute;
+    top: 128%;
+    left: 6%;
+    margin: -24px;
+    font-size: 23px;
+  }
+  #area {
+    padding: 10px 30px;
+    position: absolute;
+    top: 154%;
+    margin: -5%;
+    font-size: 25px;
+  }
+  #timezone {
+    text-align: start;
+    padding: 10px 30px;
+    position: absolute;
+    top: 67%;
+  }
+}
+/* Media query-4 end */
+/*.......................................................................*/

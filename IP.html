@@ -1,0 +1,64 @@
+<!-- You can see the demo in the README.MD FILE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <!-- link css -->   <link rel="stylesheet" href="IP.css">
+</head>
+<body>
+<!-- sorry for the code it is very much lengthy and Dirty I just took a challenge to make this project just with position thats why the code is lengthy and dirty  -->
+<!-- The website is not Mobile Responsive -->
+<!-- &nbsp; is for Space -->
+<!-- The span with class is for the the data which will appear after clicking on the button -->
+
+
+<!-- main div -->   <div class="detail"> 
+<!-- Note -->         <h2 id="text">Click the Below button To know your location</h2>
+<!-- IMP -->          <h2 id="note" >If you are using Vpn then sorry because vpn changes the location and we cant give you your actual data</h2>
+<!-- IP ADDRESS -->   <h2 id="IP" >IP:-&nbsp;                        <span class="span1"><!--  --><span id="span-1" >  </span></span></h2>
+<!-- LOCATION -->     <h2 id="location">Location:-&nbsp;             <span class="span2"><!--  --><span id="span-2" >  </span></span></h2>
+<!-- LATITUDE -->     <h2 id="latitude">Latitude:-&nbsp;             <span class="span3"><!--  --><span id="span-3" >  </span></span></h2>
+<!-- LONITUDE -->     <h2 id="longitude">Longitude:-&nbsp;           <span class="span4"><!--  --><span id="span-4" >  </span></span></h2>
+<!-- TIMEZONE -->     <h2 id="timezone">Timezone:-&nbsp;             <span class="span5"><!--  --><span id="span-5" >  </span></span></h2>
+<!-- POSTAL -->       <h2 id="postal">Postal:-&nbsp;                 <span class="span6"><!--  --><span id="span-6" >  </span></span></h2>
+<!-- ORG -->          <h2 id="org">Org:-&nbsp;                       <span class="span7"><!--  --><span id="span-7" >  </span></span></h2>
+<!--POPULATION-->     <h2 id="population">Country Population:-&nbsp; <span class="span8"><!--  --><span id="span-8" >  </span></span></h2>
+<!-- CAPITAL -->      <h2 id="capital">Country Capital:-&nbsp;       <span class="span9"><!--  --><span id="span-9" >  </span></span></h2>
+<!-- CODE -->         <h2 id="code">Country Code:-&nbsp;             <span class="span10"><!--  --><span id="span-10"> </span></span></h2>
+<!-- CALLINGCODE -->  <h2 id="calling-code">Calling Code:-&nbsp;     <span class="span11"><!--  --><span id="span-11"> </span></span></h2>
+<!-- AREA -->         <h2 id="area">Country Area:-&nbsp;             <span class="span12"><!--  --><span id="span-12"> </span></span></h2>
+<!-- CURRENCY -->     <h2 id="currency">Country Currency:-&nbsp;     <span class="span13"><!--  --><span id="span-13"> </span></span></h2>
+<!-- CONTINENT -->    <h2 id="continent">Continent:-&nbsp;           <span class="span14"><!--  --><span id="span-14"> </span></span></h2>
+<!-- main div -->     <a href="https://www.google.com" target="_blank" id="anchor" onclick="line()"><div id="map">hii</div></a>
+</div>
+          
+
+<!-- PRELOADER-SECTION --> <section>
+<!-- PRELOADER-DIV -->         <div class="loader">
+                                   <div class="upper ball"></div>
+                                   <div class="right ball"></div>
+                                   <div class="lower ball"></div>
+                                   <div class="left ball"></div>
+                                </div>
+                           </section>
+        
+   <!-- LOOKUP BUTTON -->      <button id="Show" onclick="link()">Lookup IP</button>
+      
+         
+    
+
+
+  <!-- jquery cdn -->  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- axios cdn -->  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+                      <script src="IP.js">
+                        
+                      </script>
+
+
+</body>
+</html>
